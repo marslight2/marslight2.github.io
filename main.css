@@ -125,6 +125,32 @@ h3 {
   color: grey;
   font-size: 25px;
 }
+/* Parallax scrolling images */
+#primaryschool {
+    /* The image used */
+    background-image: url("primaryschool.png");
+}
+
+#highschool {
+    /* The image used */
+    background-image: url("highschool.jpg");
+}
+
+#university {
+    /* The image used */
+    background-image: url("university2.jpg");
+}
+
+.parallax {
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Education page carousel */
 /* Make the carousel fully responsive */
