@@ -9,6 +9,7 @@ a {
   color: white; */ make the navigation links white */
   text-decoration: none;  */ remove the underline on navigation links */
   padding: 5px;
+  padding-right: 10px;
 }
 header {
   font-family: 'Rouge Script'; font-size: 80px;
@@ -275,4 +276,16 @@ h3 {
 .fa-skype {
   background: #00aff0;
   color: white;
+}
+
+/* Interests */
+.travelslides {
+  display: none;
+  height: 600px;
+  width: 1000px;
+  filter: grayscale(100%);
+}
+
+.w3-content w3-section {
+  justify-content: center;
 }

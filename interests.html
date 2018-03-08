@@ -26,14 +26,52 @@
       <div class="break"></div>
 
       <h2>Travelling</h2>
+      <div class="break"></div>
+
+      <!-- Travelling automatic gallery -->
+      <div class="w3-content w3-section" style="max-width: 1000px">
+        <img class="travelslides" src="travel/2.jpg" style="width:100%">
+        <img class="travelslides" src="travel/3.jpg" style="width:100%">
+        <img class="travelslides" src="travel/4.jpg" style="width:100%">
+        <img class="travelslides" src="travel/7.jpg" style="width:100%">
+        <img class="travelslides" src="travel/8.jpg" style="width:100%">
+      </div>
+
+      <div class="break"></div>
       <h2>Dancing</h2>
-      <h3></h3>
+      <div class="break"></div>
+
+      <!-- Dancing automatic gallery -->
+      <div class="w3-content w3-section" style="max-width: 1000px">
+        <img class="danceslides" src="dance/2.jpg" style="width:100%">
+        <img class="danceslides" src="dance/3.jpg" style="width:100%">
+        <img class="danceslides" src="dance/4.jpg" style="width:100%">
+        <img class="danceslides" src="dance/7.jpg" style="width:100%">
+        <img class="danceslides" src="dance/8.jpg" style="width:100%">
+      </div>
 
       <div class="break"></div>
       <footer>
         <a href="https://www.google.co.uk">Help</a>
         <a href="problem.html">Report a problem</a>
       </footer>
+
+      <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("travelslides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+      </script>
 
     </body>
 </html>
