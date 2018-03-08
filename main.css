@@ -39,6 +39,12 @@ body {
   font-family: 'Andika'; font-size: 20px;
   margin: auto; */ Make it centralised*/
 }
+
+#break {
+  height: 50px;
+}
+
+/* Home page formatting */
 .intro {
   padding-top: 100px; /* Make the 'Welcome' part go downa and not overlap the profile pic */
 }
