@@ -54,7 +54,7 @@ h2 {
   line-height: 70%;
 }
 /* Home page gallery */
-.row {
+.galleryrow {
   display: flex; /* Create the image gallery */
   flex-wrap: wrap;
   padding: 0 4px;
