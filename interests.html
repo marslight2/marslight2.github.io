@@ -23,13 +23,14 @@
         </nav>
       <header>The Life of Simona</header>
       <div class="profile">INTERESTS</div>
+
       <div class="break"></div>
 
       <h2>Travelling</h2>
       <div class="break"></div>
 
       <!-- Travelling automatic gallery -->
-      <div style="max-width: 1000px">
+      <div class="carousel" style="max-width: 1000px">
         <img class="travelSlides" src="travel/2.jpg" style="width:100%">
         <img class="travelSlides" src="travel/3.jpg" style="width:100%">
         <img class="travelSlides" src="travel/4.jpg" style="width:100%">
@@ -38,11 +39,13 @@
       </div>
 
       <div class="break"></div>
+
       <h2>Dancing</h2>
+
       <div class="break"></div>
 
       <!-- Dancing automatic gallery -->
-     <div style="max-width: 1000px">
+     <div class="carousel" style="max-width: 1000px">
         <img class="danceSlides" src="dance/1.jpg" style="width:100%">
         <img class="danceSlides" src="dance/2.jpg" style="width:100%">
         <img class="danceSlides" src="dance/3.jpg" style="width:100%">
@@ -52,42 +55,13 @@
       </div>
 
       <div class="break"></div>
+
       <footer>
         <a href="https://www.google.co.uk">Help</a>
         <a href="problem.html">Report a problem</a>
       </footer>
 
-      <script>
-        var myIndexTravel = 0;
-        carouselTravel();
-
-        function carouselTravel() {
-          var i;
-          var x = document.getElementsByClassName("travelSlides");
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";
-          }
-          myIndexTravel++;
-          if (myIndexTravel > x.length) {myIndexTravel = 1}
-          x[myIndexTravel-1].style.display = "block";
-          setTimeout(carouselTravel, 3000); // Change image every 3 seconds
-        }
-
-        var myIndexDance = 0;
-        carouselDance();
-
-        function carouselDance() {
-          var i;
-          var x = document.getElementsByClassName("danceSlides");
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";
-          }
-          myIndexDance++;
-          if (myIndexDance > x.length) {myIndexDance = 1}
-          x[myIndexDance-1].style.display = "block";
-          setTimeout(carouselDance, 3000); // Change image every 3 seconds
-        }
-      </script>
-
+      <!-- External JavaScript -->
+      <script src="main.js"></script>
     </body>
 </html>
