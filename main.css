@@ -90,6 +90,10 @@ h2 {
 }
 
 /* Education page schools */
+.right {
+  height: 200px;
+}
+
 .right img {
   float: right;
   height: 200px;
