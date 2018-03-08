@@ -279,13 +279,7 @@ h3 {
 }
 
 /* Interests */
-.travelslides {
-  display: none;
-  height: 600px;
-  width: 1000px;
-  filter: grayscale(100%);
-}
-.danceslides {
+.travelSlides, .danceSlides {
   display: none;
   height: 600px;
   width: 1000px;

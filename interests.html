@@ -29,12 +29,12 @@
       <div class="break"></div>
 
       <!-- Travelling automatic gallery -->
-      <div class="w3-content w3-section" style="max-width: 1000px">
-        <img class="travelslides" src="travel/2.jpg" style="width:100%">
-        <img class="travelslides" src="travel/3.jpg" style="width:100%">
-        <img class="travelslides" src="travel/4.jpg" style="width:100%">
-        <img class="travelslides" src="travel/7.jpg" style="width:100%">
-        <img class="travelslides" src="travel/8.jpg" style="width:100%">
+      <div style="max-width: 1000px">
+        <img class="travelSlides" src="travel/2.jpg" style="width:100%">
+        <img class="travelSlides" src="travel/3.jpg" style="width:100%">
+        <img class="travelSlides" src="travel/4.jpg" style="width:100%">
+        <img class="travelSlides" src="travel/7.jpg" style="width:100%">
+        <img class="travelSlides" src="travel/8.jpg" style="width:100%">
       </div>
 
       <div class="break"></div>
@@ -42,13 +42,13 @@
       <div class="break"></div>
 
       <!-- Dancing automatic gallery -->
-      <div class="w3-content w3-section" style="max-width: 1000px">
-        <img class="danceslides" src="dance/1.jpg" style="width:100%">
-        <img class="danceslides" src="dance/2.jpg" style="width:100%">
-        <img class="danceslides" src="dance/3.jpg" style="width:100%">
-        <img class="danceslides" src="dance/4.jpg" style="width:100%">
-        <img class="danceslides" src="dance/5.jpg" style="width:100%">
-        <img class="travelslides" src="dance/6.jpg" style="width:100%">
+     <div style="max-width: 1000px">
+        <img class="danceSlides" src="dance/1.jpg" style="width:100%">
+        <img class="danceSlides" src="dance/2.jpg" style="width:100%">
+        <img class="danceSlides" src="dance/3.jpg" style="width:100%">
+        <img class="danceSlides" src="dance/4.jpg" style="width:100%">
+        <img class="danceSlides" src="dance/5.jpg" style="width:100%">
+        <img class="danceSlides" src="dance/6.jpg" style="width:100%">
       </div>
 
       <div class="break"></div>
@@ -58,34 +58,34 @@
       </footer>
 
       <script>
-        var myIndex = 0;
-        dancecarousel();
+        var myIndexTravel = 0;
+        carouselTravel();
 
-        function dancecarousel() {
-            var i;
-            var x = document.getElementsByClassName("danceslides");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
-            setTimeout(carousel, 3000); // Change image every 3 seconds
+        function carouselTravel() {
+          var i;
+          var x = document.getElementsByClassName("travelSlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndexTravel++;
+          if (myIndexTravel > x.length) {myIndexTravel = 1}
+          x[myIndexTravel-1].style.display = "block";
+          setTimeout(carouselTravel, 3000); // Change image every 3 seconds
         }
 
-        var myIndex = 0;
-        travelcarousel();
+        var myIndexDance = 0;
+        carouselDance();
 
-        function travelcarousel() {
-            var i;
-            var x = document.getElementsByClassName("travelslides");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
-            setTimeout(carousel, 3000); // Change image every 3 seconds
+        function carouselDance() {
+          var i;
+          var x = document.getElementsByClassName("danceSlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndexDance++;
+          if (myIndexDance > x.length) {myIndexDance = 1}
+          x[myIndexDance-1].style.display = "block";
+          setTimeout(carouselDance, 3000); // Change image every 3 seconds
         }
       </script>
 
