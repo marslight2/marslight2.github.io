@@ -129,27 +129,60 @@ h3 {
 #primaryschool {
     /* The image used */
     background-image: url("primaryschool.png");
+    z-index: 1;
+}
+
+#firsttext {
+  position: fixed;
+  color: white;
+  z-index: 0;
 }
 
 #highschool {
     /* The image used */
     background-image: url("highschool.jpg");
+    z-index: 2;
+}
+
+#secondtext {
+  position: fixed;
+  color: white;
+  z-index: 0;
 }
 
 #university {
     /* The image used */
     background-image: url("university2.jpg");
+    z-index: 4;
+}
+
+#thirdtext {
+  position: fixed;
+  color: white;
+  z-index: 5;
 }
 
 .parallax {
     /* Set a specific height */
-    height: 500px;
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    z-index: 0;
+    height: 1000px;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+  z-index: 1;
+  position: relative;
 }
 
 /* Education page carousel */
