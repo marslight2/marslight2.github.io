@@ -47,6 +47,7 @@ h2 {
   font-size: 30px;
   line-height: 70%;
 }
+/* Home page gallery */
 .row {
   display: flex; /* Create the image gallery */
   flex-wrap: wrap;
@@ -86,6 +87,7 @@ h2 {
   }
 }
 
+/* Education page schools */
 .right {
   margin-bottom: 50px;
   margin-top: 50px;
@@ -110,6 +112,7 @@ h3 {
   font-size: 25px;
 }
 
+/* Education page carousel */
 /* Make the carousel fully responsive */
 @media (max-width: 800px) {
   .carousel-inner img {
