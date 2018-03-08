@@ -43,7 +43,9 @@ body {
   padding-top: 100px; /* Make the 'Welcome' part go downa and not overlap the profile pic */
 }
 h2 {
-  font-family: 'Andika'; font-size: 30px;
+  font-family: 'Andika';
+  font-size: 30px;
+  line-height: 70%;
 }
 .row {
   display: flex; /* Create the image gallery */
@@ -81,4 +83,60 @@ h2 {
     flex: 80%;
     max-width: 80%;
   }
+}
+
+.right {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.right img {
+  float: right;
+  height: 200px;
+  width: 350px;
+  margin-left: 10px;
+}
+
+.left img {
+  float: left;
+  height: 200px;
+  width: 350px;
+  margin-right: 10px;
+}
+
+h3 {
+  color: grey;
+  line-height: 80%;
+}
+
+/* Make the carousel fully responsive */
+@media (max-width: 800px) {
+  .carousel-inner img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.carousel-control-prev {
+  margin-left: 300px;
+}
+
+.carousel-control-next {
+  margin-right: 300px;
+}
+
+#demo {
+  background-color: black;
+  padding: 10px;
+}
+
+.carousel-caption {
+  color: rgba(255, 128, 0);
+}
+
+.carousel-caption h3 {
+  color: rgba(204, 102, 0);
+}
+.carousel-inner img {
+  filter: grayscale(100%);
 }
