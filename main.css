@@ -63,6 +63,7 @@ h2 {
 
 .column img {
   filter: grayscale(100%);
+  margin-bottom: 8px;
 }
 
 .break {
