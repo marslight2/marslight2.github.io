@@ -12,12 +12,14 @@ a {
   padding: 5px;
   padding-right: 10px;
 }
+
 header {
   font-family: 'Rouge Script'; font-size: 80px;
   text-align: center;
   line-height: 200px;
   font-weight: bold;
 }
+
 .profile {
   background-image: url('https://scontent.flcy1-1.fna.fbcdn.net/v/t31.0-8/27709645_10211106442927500_4563793995182855578_o.jpg?oh=48c35746d60b24d3ba9987110e798e81&oe=5B050C02');
   background-repeat: no-repeat;
@@ -30,11 +32,13 @@ header {
   line-height: 350px;
   font-weight: bold;
 }
+
 .profile img {
   border-radius: 50%; /* Make the image round*/
   filter: grayscale(100%);
   margin-top: 250px; /* Make the image sit halfway between the profile and intro */
 }
+
 body {
   padding: 5px;
   text-align: center;
@@ -63,11 +67,29 @@ footer a {
 .intro {
   padding-top: 100px; /* Make the 'Welcome' part go downa and not overlap the profile pic */
 }
+
 h2 {
   font-family: 'Andika';
   font-size: 30px;
   line-height: 70%;
 }
+
+/* Home page subscription */
+input {
+  border: 0;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(230, 230, 230);
+  width: 300px;
+  height: 40px;
+}
+input[type="submit"] {
+  background: rgb(153, 61, 0);
+  color:white;
+  width: 100px;
+  height: 40px;
+}
+
 /* Home page gallery */
 .galleryrow {
   display: flex; /* Create the image gallery */
