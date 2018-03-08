@@ -145,3 +145,8 @@ h3 {
 .carousel-inner img {
   filter: grayscale(100%);
 }
+
+/* Contact */
+#map {
+  float: right;
+}
