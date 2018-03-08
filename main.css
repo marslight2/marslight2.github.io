@@ -44,6 +44,19 @@ body {
   height: 100px;
 }
 
+footer {
+  background-color: black;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 30px;
+  text-align: left;
+  font-size: 15px;
+}
+
+footer a {
+  padding-right: 10px;
+}
+
 /* Home page formatting */
 .intro {
   padding-top: 100px; /* Make the 'Welcome' part go downa and not overlap the profile pic */
@@ -147,10 +160,7 @@ h3 {
 }
 
 /* Contact */
-.row {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 /* Social Media buttons */
 .fa {
   padding: 25px;
