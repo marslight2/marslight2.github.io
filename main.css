@@ -285,7 +285,9 @@ h3 {
   width: 1000px;
   filter: grayscale(100%);
 }
-
-.w3-content w3-section {
-  justify-content: center;
+.danceslides {
+  display: none;
+  height: 600px;
+  width: 1000px;
+  filter: grayscale(100%);
 }

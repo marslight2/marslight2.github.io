@@ -43,11 +43,12 @@
 
       <!-- Dancing automatic gallery -->
       <div class="w3-content w3-section" style="max-width: 1000px">
+        <img class="danceslides" src="dance/1.jpg" style="width:100%">
         <img class="danceslides" src="dance/2.jpg" style="width:100%">
         <img class="danceslides" src="dance/3.jpg" style="width:100%">
         <img class="danceslides" src="dance/4.jpg" style="width:100%">
-        <img class="danceslides" src="dance/7.jpg" style="width:100%">
-        <img class="danceslides" src="dance/8.jpg" style="width:100%">
+        <img class="danceslides" src="dance/5.jpg" style="width:100%">
+        <img class="travelslides" src="dance/6.jpg" style="width:100%">
       </div>
 
       <div class="break"></div>
@@ -58,9 +59,24 @@
 
       <script>
         var myIndex = 0;
-        carousel();
+        dancecarousel();
 
-        function carousel() {
+        function dancecarousel() {
+            var i;
+            var x = document.getElementsByClassName("danceslides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+
+        var myIndex = 0;
+        travelcarousel();
+
+        function travelcarousel() {
             var i;
             var x = document.getElementsByClassName("travelslides");
             for (i = 0; i < x.length; i++) {
