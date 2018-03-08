@@ -147,13 +147,11 @@ h3 {
 }
 
 /* Contact */
-#map {
-  float: right;
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
 }
-#address {
-  height: 450px;
-}
-
+/* Social Media buttons */
 .fa {
   padding: 25px;
   font-size: 30px;
