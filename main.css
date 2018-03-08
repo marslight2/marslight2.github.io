@@ -40,8 +40,8 @@ body {
   margin: auto; */ Make it centralised*/
 }
 
-#break {
-  height: 50px;
+.break {
+  height: 100px;
 }
 
 /* Home page formatting */
@@ -71,10 +71,6 @@ h2 {
 .column img {
   filter: grayscale(100%);
   margin-bottom: 8px;
-}
-
-.break {
-  height: 100px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
