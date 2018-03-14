@@ -218,6 +218,13 @@ h3 {
   }
 }
 
+@media (max-width: 600px) {
+  .carousel-inner img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
 .carousel-control-prev {
   margin-left: 300px;
 }
@@ -313,4 +320,18 @@ h3 {
 .carousel {
   display: block;
   margin: auto;
+}
+
+@media (max-width: 800px) {
+  .carousel img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel img {
+    width: 40%;
+    height: 40%;
+  }
 }
