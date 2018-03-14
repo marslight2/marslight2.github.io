@@ -118,6 +118,15 @@ input[type="submit"] {
   }
 }
 
+@media (max-width: 1000px) {
+  .line-break {
+    display: block !important;
+  }
+  #map{
+    margin-top: 20px;
+  }
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .column {
@@ -242,6 +251,10 @@ h3 {
 /* Contact */
 
 /* Social Media buttons */
+.line-break {
+  display: none;
+}
+
 .fa {
   padding: 25px;
   font-size: 30px;
