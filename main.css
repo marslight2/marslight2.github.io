@@ -13,6 +13,11 @@ a {
   padding-right: 10px;
 }
 
+a:hover {
+  color: orange;
+  text-decoration: none;  */ remove the underline on navigation links */
+}
+
 header {
   font-family: 'Rouge Script'; font-size: 80px;
   text-align: center;
