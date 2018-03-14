@@ -211,20 +211,10 @@ h3 {
 
 /* Education page carousel */
 /* Make the carousel fully responsive */
-@media (max-width: 800px) {
-  .carousel-inner img {
-    width: 70%;
-    height: 70%;
-  }
+.parallax {
+  height: auto;
+  max-width: 100%
 }
-
-@media (max-width: 600px) {
-  .carousel-inner img {
-    width: 40%;
-    height: 40%;
-  }
-}
-
 .carousel-control-prev {
   margin-left: 300px;
 }
@@ -311,8 +301,8 @@ h3 {
 /* Interests */
 .travelSlides, .danceSlides {
   display: none;
-  height: 600px;
-  width: 1000px;
+  height: auto;
+  max-width: 100%;
   filter: grayscale(100%);
   justify-content: center;
 }
@@ -320,18 +310,4 @@ h3 {
 .carousel {
   display: block;
   margin: auto;
-}
-
-@media (max-width: 800px) {
-  .carousel img {
-    width: 70%;
-    height: 70%;
-  }
-}
-
-@media (max-width: 600px) {
-  .carousel img {
-    width: 40%;
-    height: 40%;
-  }
 }
